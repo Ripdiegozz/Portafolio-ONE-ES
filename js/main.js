@@ -78,5 +78,5 @@ contact_btn.addEventListener('click',()=>{
 })
 
 sendbtn.addEventListener('click', ()=>{
-    alert('Correo enviado correctamente!')
+    alert('Correo enviado correctamente!\nTe responderé tan pronto como pueda :D')
 })
