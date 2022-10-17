@@ -1,0 +1,569 @@
+/*
+#fdfdfd
+#E5E5E5
+
+
+*****************
+
+FONTS:
+BODY AND SUBTITLES
+font-family: 'Martel', serif;
+font-family: 'Montserrat', sans-serif;
+
+TITLES
+font-family: 'Titillium Web', sans-serif;
+
+*/
+
+:root{
+    --color-body: #fdfdfd;
+    --color-section: #f5f5f5;
+    --color-fonts: #252442;
+    --linear-gradient: linear-gradient(40deg, #8dcef8, #7973ee 70%);    
+    --box-shadow: 0 4px 35px rgba(0,0,0,0.2);
+}
+
+.dark{
+    --color-body: #242424;
+    --color-section: #565656;
+    --color-fonts: whitesmoke;
+    --linear-gradient: linear-gradient(40deg, #f33434, #ff8c00 70%);    
+    --box-shadow: 0 3px 15px rgba(48,48,0,0.2);
+}
+
+.dark .switch::after{
+    transform: translateX(31px);
+    -webkit-transform: translateX(31px);
+    -moz-transform: translateX(31px);
+    -ms-transform: translateX(31px);
+    -o-transform: translateX(31px);
+}
+
+
+body.dark{
+    background: var(--color-body);
+    color: whitesmoke;
+}
+
+body.dark header{
+    background: var(--color-section);
+    color: whitesmoke;  
+}
+
+body.dark a{
+    color: whitesmoke;  
+}
+
+body.dark li a{
+    color: whitesmoke;  
+}
+
+body.dark button{
+    background: #7973ee;  
+}
+
+body.dark .hobbies__cards___box img{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+body.dark .logo__alura{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+body.dark .about__me___description img{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+body.dark #scrollTop a img{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* HEADER */
+.header-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+    background: #faf9f9;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 55px;
+}
+
+.title__box{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 2.5em;
+}
+
+.title__logo{
+    width: 50px;
+    height: 50px;
+}
+
+.title__logo___text{
+    margin: 0 0 0 0.7em;
+    font-size: 1.2em;
+}
+
+.title__logo___text a{
+    text-decoration: none;
+    color: #252422;
+    font-weight: 550;
+}
+
+.nav__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav__list___item{
+    font-size: 1.12em;
+    margin: 0 1.2em 0 0;
+}
+
+.nav__list___item a:hover{
+    border-bottom: #242a35 solid 1.70px;
+    cursor: pointer;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+.nav__list___item:nth-child(6){
+    margin-right: 2rem;
+}
+
+.switch{
+    background: var(--linear-gradient);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: 65px;
+    position: relative;
+    height: 30px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    color: whitesmoke;
+    box-sizing: var(--box-shadow);
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.switch::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0.3rem;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background-color: whitesmoke;
+    transition: transform ease-in-out 0.5s;
+    -webkit-transition: transform ease-in-out 0.5s;
+    -moz-transition: transform ease-in-out 0.5s;
+    -ms-transition: transform ease-in-out 0.5s;
+    -o-transition: transform ease-in-out 0.5s;
+}
+
+/* MAIN CONTAINER */
+
+/* PERSONAL PRESENTATION*/
+
+.container{
+    padding-top: 3.5em;
+}
+
+.social__box{
+    display: flex;
+    width: 100%;
+    height: 30em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.description h2{
+    font-size: 36px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.h3-1{
+    font-size: 16px;
+    font-family: 'Martel', serif;
+}
+
+.description h4{
+    padding-top: 0.8em;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Martel', serif;
+}
+
+.social__list___icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 3em;
+    list-style: none;
+}
+
+.social__list___link a{
+    font-size: 4em;
+    text-decoration: none;
+    color: #252422;
+}
+
+.download-button {
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    border-width: 0;
+    background-color: #252422;
+    font-size: 18px;
+    padding: 12px;
+    font-weight: 550;
+    border-radius: 4px;
+}
+
+.download-button a{
+color: white;
+text-decoration: none;
+}
+
+.download-button a i{
+margin-right: 10px;
+}
+
+.download-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+/* ABOUT ME*/
+
+.about__me{
+    width: 100%;
+    height: 33em;
+}
+
+.about__me___description{
+    width: 60%;
+    margin-left: 13em;
+    padding-top: 4em;
+    text-align: justify;
+}
+
+.about__me___description h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 36px;
+}
+
+.about__me___description p{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 18px;
+}
+
+.about__me___description img{
+    width: 40%;
+    height: 30%;
+}
+
+/* SKILLS AND HOBBIES */
+
+.skills__hobbies{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.skills__hobbies h2{
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 0.6em;
+}
+
+.skills__cards___box{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+
+.skills__cards___box img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    padding-bottom: 6em;
+}
+
+.hobbies__cards___box{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+
+.hobbie__card{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 20%;
+    height: 40%;
+}
+
+.hobbie__card img{
+    width: 140px;
+    height: 140px;
+}
+
+.hobbie__card p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+/* ACADEMICS */
+
+.academics{
+    padding-bottom: 4em;
+}
+
+.academics h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2.5em;
+    padding-top: 1.45em;
+    text-align: center;
+
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.academic__card{
+    font-family: 'Martel', serif;
+    width: 25%;
+}
+
+.logo__alura{
+    width: 360px;
+    height: 300px;
+    padding: 1em;
+}
+
+.logo__sena{
+    width: 300px;
+    height: 300px;
+    padding: 1em;
+}
+
+/* PROYECTS */
+
+.proyects-tittle{
+    font-size: 2.5em;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.proyect__card{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    padding-bottom: 2em;
+    padding-left: 2em;
+}
+
+.proyect__card___img img{
+    width: 800px;
+    background: white;
+    border: #0E1822 1px solid;
+}
+
+.proyect__card___description{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 4.5em 0 0 0;
+}
+
+.proyect__card___description h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 36px;
+}
+
+.proyect__card___description h3{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 20px;
+}
+
+.proyect__card___description h3 i{
+    font-size: 35px;
+}
+
+.button-borders{
+    padding-bottom: 1em;
+}
+
+.primary-button {
+    font-family: "Titillium Web", sans-serif;
+    color: white;
+    cursor: pointer;
+    width: 171.72px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    border: 1px solid #0E1822;
+    padding: 0.8rem 2.1rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 531.28 200'%3E%3Cdefs%3E%3Cstyle%3E .shape %7B fill: %23FF4655 /* fill: %230E1822; */ %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolygon class='shape' points='415.81 200 0 200 115.47 0 531.28 0 415.81 200' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-color: #0E1822;
+    background-size: 200%;
+    background-position: 200%;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    transition-property: background-position, border, color;
+    z-index: 1;
+}
+
+.primary-button a{
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+.primary-button:hover {
+    border: 1px solid #FF4655;
+    color: white;
+    background-position: 40%;
+}
+
+
+/* CONTACT */
+
+
+.contact{
+    height: 50em;
+    width: 100%;
+    padding-top: 1em;
+
+}
+
+.contact h2{
+    font-size: 2.5em;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+
+.contact__user___box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.contact__user___box img{
+    width: 360px;
+    height: 640px;
+    margin-left: 15em;
+}
+
+form{
+    width: 80%;
+    border-radius: 30px;
+    
+}
+
+.form-inner {
+    padding: 40px;
+    display: flex;
+    flex-flow: column;
+    
+}
+
+.form-inner input{
+    resize: none;
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 20px;
+    background: #E5E5E5;
+}
+
+.form-inner textarea {
+    resize: none;
+    width: 70%;
+    height: 16em;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #E5E5E5;
+}
+
+.form-inner button {
+    width: 35%;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 4px solid #0E1822;
+    background: #262626;
+    font-size: 18px;
+    color: #ffffff;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.form-inner button:hover {
+    background: #FF4655;
+}
+
+
+/* FOOTER */
+
+footer{
+    text-align: center; 
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+}
+
+/*Scroll to Top*/
+
+#scrollTop{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: -100px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+#scrollTop a img{
+    width: 40px;
+    height: 40px;
+}

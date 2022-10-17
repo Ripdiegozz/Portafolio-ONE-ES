@@ -1,0 +1,705 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .container{
+        width: 100%;
+    }
+    
+    .header-box{
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .title__box{
+        margin: 0;
+        align-items: center;
+    }
+    
+    .title__box h1{
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .nav__list li{
+        display: none;
+    }
+
+    .nav__list li:nth-child(6){
+        display: inherit;
+    }
+
+    .nav__list{
+        padding: 8px;
+    }
+
+    .container{
+        padding-top: 3em;
+    }
+    
+    .image__box{    
+        height: 30%;
+    }
+
+    .image__box img{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .social__box{
+        flex-direction: column;
+        justify-content: unset;
+        height: 50em;
+    }
+    
+    .social__box h2{
+        padding: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .social__box h3{
+        padding: 15px;
+        padding-top: 0;
+        text-align: justify;
+    }
+    
+    .social__list___icons{
+        flex-flow: row wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .download-button{
+        margin-top: 0.5em;
+        width: 71%;
+        height: 60px;
+    }
+
+    .download-button:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 25px, rgba(0, 0, 0, 0.12) 0px -12px 20px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .image__box{
+        margin: 0 auto;
+        padding: 0;
+        order: -1;
+    }
+
+    .about__me{
+        height: 28em;
+    }
+
+    .about__me___description{
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .about__me___description p{
+        text-align: justify;
+    }
+
+    .about__me___description h2{
+        text-align: center;
+    }
+
+    .skills__cards___box img{
+        padding-bottom: 2em;
+    }
+
+    .hobbies__cards___box{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    
+    .hobbie__card{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 40%;
+        height: 40%;
+        padding-bottom: 0;
+    }
+
+    .cards{
+        flex-direction: column;
+        justify-content: unset;
+        margin-bottom: 0;
+    }
+
+    .academics{
+        padding-bottom: 0;
+    }
+
+    .academic__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .academic__card h3, p{
+        text-align: center;
+    }
+
+
+    .logo__alura{
+        width: 300px;
+        height: 200px;
+        margin: 0 0 0 7%;
+        /* background: #fdfdfd; */
+        padding: 1em;
+    }
+    
+    .logo__sena{
+        width: 200px;
+        height: 200px;
+        padding: 1em;
+    }
+
+    .proyects-tittle{
+        padding-top: 0.5em;
+    }
+
+    .proyect__card{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .proyect__card___img img{
+        padding: 0;
+        width: 100%;
+        border: 0;
+    }
+
+    .proyect__card___description{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    .contact__user___box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__user___box img{
+        display: none;
+    }
+
+    .form-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .form-inner button{
+        width: 50%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .container{
+        width: 100%;
+        padding-top: 2.4em;
+    }
+    
+    .header-box{
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    .title__box{
+        margin: 0;
+    }
+
+    .nav__list li{
+        display: none;
+    }
+
+    .nav__list li:nth-child(6){
+        display: inherit;
+    }
+    
+    .image__box{    
+        height: 40%;
+    }
+
+    .image__box img{
+        width: 90%;
+        height: 90%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .social__box{
+        flex-direction: column;
+        justify-content: unset;
+        height: 46em;
+    }
+    
+    .social__box h2{
+        padding: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .social__box h3{
+        padding: 15px;
+        padding-top: 0;
+        text-align: justify;
+    }
+    
+    .social__list___icons{
+        flex-flow: row wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .download-button{
+        width: 30%;
+        height: 60px;
+    }
+
+    .download-button:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 25px, rgba(0, 0, 0, 0.12) 0px -12px 20px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .image__box{
+        margin: 0 auto;
+        padding: 0;
+        order: -1;
+    }
+
+    .about__me{
+        height: 26em;
+    }
+
+    .about__me___description{
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .about__me___description p{
+        text-align: justify;
+    }
+
+    .about__me___description h2{
+        text-align: center;
+    }
+
+    .skills__cards___box img{
+        padding-bottom: 2em;
+    }
+
+    .hobbies__cards___box{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    
+    .hobbie__card{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 40%;
+        height: 40%;
+        padding-bottom: 0;
+    }
+
+    .cards{
+        flex-direction: column;
+        justify-content: unset;
+        margin-bottom: 0;
+    }
+
+    .academics{
+        padding-bottom: 0;
+    }
+
+    .academic__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .academic__card h3, p{
+        text-align: center;
+    }
+
+
+    .logo__alura{
+        width: 300px;
+        height: 200px;
+        margin: 0 0 0 7%;
+        /* background: #fdfdfd; */
+        padding: 1em;
+    }
+    
+    .logo__sena{
+        width: 200px;
+        height: 200px;
+        padding: 1em;
+    }
+
+    .proyects-tittle{
+        padding-top: 0.5em;
+    }
+
+    .proyect__card{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .proyect__card___img img{
+        padding: 0;
+        width: 100%;
+        border: 0;
+    }
+
+    .proyect__card___description{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    .contact__user___box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__user___box img{
+        display: none;
+    }
+
+    .form-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .form-inner button{
+        width: 50%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body, html{
+        overflow-x: hidden;
+    }
+
+    .title__box{
+        margin: 0 0 0 1em;
+    }
+
+    .header-box{
+        font-size: 2vh;
+        justify-content: space-evenly;
+    }
+
+    .title__box h1{
+        display: none;
+    }
+    /* .description h2, h3{
+        padding: 1em;
+    } */
+
+    .social__box h2{
+        padding: 30px;
+        padding-top: 2em;
+        padding-bottom: 0;
+    }
+    
+    .social__box h3{
+        padding: 30px;
+        padding-top: 0;
+        text-align: justify;
+    }
+
+    .image__box img{
+        padding: 0;
+        margin: 0;
+        width: 300px;
+        height: 300px;
+    }
+
+    .download-button{
+        width: 40%;
+    }
+
+    .about__me{
+        padding-top: 2em;
+        height: 34em;
+    }
+
+    .about__me___description{
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .about__me___description p{
+        text-align: justify;
+    }
+
+    .about__me___description h2{
+        text-align: center;
+    }
+
+    .hobbies__cards___box{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    
+    .hobbie__card{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 40%;
+        height: 40%;
+        padding-bottom: 0;
+    }
+
+    .academics{
+        padding-bottom: 0;
+    }
+
+    .academic__card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+
+    .academic__card h3, p{
+        text-align: center;
+    }
+
+    .proyects-tittle{
+        padding-top: 0.5em;
+    }
+
+    .proyect__card{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .proyect__card___img img{
+        padding: 0;
+        width: 100%;
+        border: 0;
+    }
+
+    .proyect__card___description{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    .contact__user___box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__user___box img{
+        display: none;
+    }
+
+    .form-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .form-inner button{
+        width: 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body, html{
+        overflow-x: hidden;
+    }
+
+    .title__box{
+        margin: 0 0 0 1em;
+    }
+
+    .switch{
+        margin-right: 1em;
+    }
+
+    .social__box h2{
+        padding: 30px;
+        padding-top: 2em;
+        padding-bottom: 0;
+    }
+    
+    .social__box h3{
+        padding: 30px;
+        padding-top: 0;
+        text-align: justify;
+    }
+
+    .image__box img{
+        padding: 0;
+        margin: 0;
+        width: 400px;
+        height: 400px;
+    }
+
+    .download-button{
+        width: 30%;
+    }
+
+    .about__me{
+        padding-top: 2em;
+        height: 10em;
+    }
+
+    .about__me___description{
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .about__me___description p{
+        text-align: justify;
+    }
+
+    .about__me___description h2{
+        text-align: center;
+    }
+
+    .about__me{
+        padding-top: 2em;
+        height: 34em;
+    }
+
+    .about__me___description{
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .about__me___description p{
+        text-align: justify;
+    }
+
+    .about__me___description h2{
+        text-align: center;
+    }
+
+    .hobbies__cards___box{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin-left: 2.2em;
+        padding: 0;
+    }
+
+    .hobbie__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .academics{
+        padding-bottom: 0;
+    }
+
+    .academic__card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+
+    .academic__card h3, p{
+        text-align: center;
+    }
+
+    .proyects-tittle{
+        padding-top: 0.5em;
+    }
+
+    .proyect__card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .proyect__card___img{
+        display: flex;
+        justify-content: center;
+        width:65%;
+    }
+
+    .proyect__card___img img{
+        padding: 0;
+        margin: 0;
+        width: 650px;
+        border: 0;
+    }
+
+    .proyect__card___description{
+        padding: 0;
+        width: 35%;
+        margin: 0 2em 0 0;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    .contact__user___box{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contact__user___box img{
+        padding: 0;
+        margin: 0;
+    }
+
+    .form-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 45%;
+    }
+
+    .form-inner button{
+        width: 50%;
+    }
+}
