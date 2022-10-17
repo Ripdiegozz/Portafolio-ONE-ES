@@ -1,3 +1,9 @@
+@media only screen and (max-width: 400px){
+    .skills__hobbies{
+        padding-top: 4.5em;
+    }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     html, body{
