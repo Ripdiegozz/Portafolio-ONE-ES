@@ -1,5 +1,4 @@
 // variables
-
 let about_btn = document.getElementById('about');
 let skills_btn = document.getElementById('skills');
 let hobbies_btn = document.getElementById('hobbies');
@@ -9,6 +8,7 @@ let contact_btn = document.getElementById('contact');
 let dark_btn = document.getElementById('dark-mode');
 let switch_mode = document.getElementById('switch');
 let scrollToTop = document.getElementById('scrollTop')
+let sendbtn = document.getElementById('send_btn')
 
 // event listeners
 switch_mode.addEventListener('click', ()=>{
@@ -75,4 +75,8 @@ contact_btn.addEventListener('click',()=>{
         left: 0,
         behavior: "smooth"
     })
+})
+
+sendbtn.addEventListener('click', ()=>{
+    alert('Correo enviado correctamente!')
 })
